@@ -73,7 +73,7 @@ macro_rules! impl_cast {
     };
 
     // Entry point
-    ($($from:tt => $($into:tt),+;)+ $(,)?) => {
+    ($( $from:tt => $( $into:tt ),+; )+) => {
         $(
             $(
                 impl_cast! { @inner $from => $into }
