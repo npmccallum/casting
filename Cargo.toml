@@ -1,0 +1,21 @@
+[package]
+name = "casting"
+version = "0.1.0"
+edition = "2021"
+authors = ["Nathaniel McCallum <nathaniel@mccallum.life>"]
+description = "CastFrom and CastInto traits for generic numeric casting"
+license = "MIT"
+repository = "https://github.com/npmccallum/casting"
+homepage = "https://github.com/npmccallum/casting"
+documentation = "https://docs.rs/casting"
+readme = "README.md"
+keywords = ["cast", "numeric", "conversion", "no_std"]
+categories = ["no-std", "rust-patterns"]
+rust-version = "1.56"
+
+[features]
+nightly = []
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
